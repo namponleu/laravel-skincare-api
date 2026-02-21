@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
         userSearch.addEventListener('input', function() {
             const query = this.value;
             if (query.length > 2) {
-                fetch(`{{ route("admin.messages.users") }}?search=${encodeURIComponent(query)}`)
+                fetch(`{{ route("admin.messages.index") }}?search=${encodeURIComponent(query)}`)
                     .then(response => response.json())
                     .then(users => {
                         console.log('Search results:', users); // Debug log

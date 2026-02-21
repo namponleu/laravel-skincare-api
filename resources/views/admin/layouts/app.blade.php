@@ -88,14 +88,15 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <div class="w-8 h-8 rounded-full overflow-hidden">
-                        <img class="w-full h-full object-cover" src="{{ asset('images/profile.png') }}" alt="Profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img class="w-full h-full object-cover" src="{{ asset('images/profile_pokemon.png') }}" alt="Profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-full h-full bg-blue-500 flex items-center justify-center" style="display: none;">
                             <i class="fas fa-user text-white text-sm"></i>
                         </div>
                     </div>
                     <div class="ml-3">
                         <p class="text-white text-sm font-medium">{{ Auth::user()->name ?? Auth::user()->username }}</p>
-                        <p class="text-gray-400 text-xs">{{ Auth::user()->email ?? Auth::user()->username }}@example.com</p>
+                        <p class="text-gray-400 text-xs">{{ Auth::user()->email ?? Auth::user()->username }}</p>
+                        {{-- <p class="text-gray-400 text-xs">{{ Auth::user()->email ?? Auth::user()->username }}@example.com</p> --}}
                     </div>
                 </div>
                 <form action="{{ route('admin.logout') }}" method="POST" class="inline">

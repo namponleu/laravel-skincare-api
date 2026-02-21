@@ -32,6 +32,7 @@ class AuthController extends Controller
         $isPhoneOtpSignup = $request->has('otp') && $request->has('session_id');
 
         if ($isPhoneOtpSignup) {
+            // Sigup with phone number validation
             // Phone OTP Signup Validation (tel uniqueness checked on DB format e.g. 967772715)
             $validator = Validator::make($request->all(), [
                 'tel' => [

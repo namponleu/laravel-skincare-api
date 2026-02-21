@@ -13,10 +13,14 @@ use App\Http\Controllers\Admin\MessageController as AdminMessageController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('/admin.auth.login');
     // return view('welcome');
 });
+// Route::get('/login', function () {
+//     return view('/admin.auth.login');
+//     // return view('welcome');
+// });
 
 /*
 |--------------------------------------------------------------------------
