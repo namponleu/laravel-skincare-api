@@ -19,12 +19,12 @@ return [
 
     'allowed_methods' => ['*'],
 
-    // 'allowed_origins' => ['*']   // if the api is public we can prefer this
+    'allowed_origins' => ['*'],
     // we use the specific url for security purpose
-    'allowed_origins' => [
-        'https://flutter-skincare-app.web.app',
-        'https://flutter-skincare-app.firebaseapp.com'
-        ],
+    // 'allowed_origins' => [
+    //     'https://flutter-skincare-app.web.app',
+    //     'https://flutter-skincare-app.firebaseapp.com'
+    //     ],
 
     'allowed_origins_patterns' => [],
 
