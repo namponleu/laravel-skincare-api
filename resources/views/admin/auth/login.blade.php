@@ -13,7 +13,7 @@
         <div class="text-center">
             <div class="mx-auto h-20 w-20 bg-linear-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg">
             {{-- <div class="mx-auto h-20 w-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg"> --}}
-                <i class="fas fa-shield-alt text-white text-3xl"></i>
+                <i class="fas fa-solid fa-spa text-pink-500 text-3xl"></i>
             </div>
             <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
                 Admin Login
@@ -45,12 +45,12 @@
                 <!-- Username Field -->
                 <div>
                     <label for="username" class="block text-sm font-medium text-gray-700 mb-2">
-                        <i class="fas fa-user mr-2 text-blue-600"></i>
+                        <i class="fas fa-user mr-2 text-pink-600"></i>
                         Username
                     </label>
                     <input id="username" name="username" type="text" autocomplete="username" required
                         value="{{ old('username') }}"
-                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm @error('username') border-red-500 @enderror"
+                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500  focus:border-pink-500 sm:text-sm @error('username') border-pink-500 @enderror"
                         placeholder="Enter your username">
                     @error('username')
                         <p class="mt-1 text-sm text-red-600">
@@ -62,13 +62,13 @@
                 <!-- Password Field -->
                 <div>
                     <label for="password" class="block text-sm font-medium text-gray-700 mb-2">
-                        <i class="fas fa-lock mr-2 text-blue-600"></i>
+                        <i class="fas fa-lock mr-2 text-pink-600"></i>
                         Password
                     </label>
                     <div class="relative">
                         <input id="password" name="password" type="password" autocomplete="current-password" required
-                               class="w-full px-3 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm @error('password') border-red-500 @enderror"
-                               placeholder="Enter your password">
+                            class="w-full px-3 py-2 pr-10 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 sm:text-sm @error('password') border-pink-500 @enderror"
+                            placeholder="Enter your password">
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
                             <button type="button" onclick="togglePassword()" class="text-gray-400 hover:text-gray-600 focus:outline-none">
                                 <i id="password-toggle-icon" class="fas fa-eye"></i>
@@ -85,7 +85,7 @@
                 <!-- Remember Me -->
                 <div class="flex items-center">
                     <input id="remember" name="remember" type="checkbox" 
-                           class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        class="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded">
                     <label for="remember" class="ml-2 block text-sm text-gray-700">
                         Remember me
                     </label>
@@ -94,8 +94,8 @@
                 <!-- Submit Button -->
                 <div>
                     <button type="submit" 
-                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        <i class="fas fa-sign-in-alt mr-2"></i>
+                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                        {{-- <i class="fas fa-sign-in-alt mr-2"></i> --}}
                         Sign in
                         <!-- <i class="fas fa-arrow-right ml-2"></i> -->
                     </button>
@@ -103,18 +103,18 @@
             </form>
 
             <!-- Default Admin Credentials -->
-            <div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+            {{-- <div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
                 <h3 class="text-sm font-medium text-gray-900 mb-3 flex items-center">
-                    <i class="fas fa-info-circle mr-2 text-blue-600"></i>
+                    <i class="fas fa-info-circle mr-2 text-pink-600"></i>
                     Default Admin Credentials:
                 </h3>
                 <div class="text-sm text-gray-600 space-y-2">
                     <p class="flex items-center">
-                        <i class="fas fa-user mr-2 text-blue-500"></i>
+                        <i class="fas fa-user mr-2 text-pink-500"></i>
                         <strong>Username:</strong> <span class="ml-1 font-mono bg-gray-100 px-2 py-1 rounded">admin</span>
                     </p>
                     <p class="flex items-center">
-                        <i class="fas fa-key mr-2 text-blue-500"></i>
+                        <i class="fas fa-key mr-2 text-pink-500"></i>
                         <strong>Password:</strong> <span class="ml-1 font-mono bg-gray-100 px-2 py-1 rounded">admin123</span>
                     </p>
                 </div>
@@ -122,7 +122,7 @@
                     <i class="fas fa-shield-alt mr-1 text-orange-500"></i>
                     Please change these credentials after first login for security.
                 </p>
-            </div>
+            </div> --}}
         </div>
 
         <!-- Footer -->
