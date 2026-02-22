@@ -42,25 +42,25 @@
                     Users
                 </a>
                 
-                            <a href="{{ route('admin.orders') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.orders*') ? 'bg-gray-800 text-white' : '' }}">
-                <i class="fas fa-shopping-cart w-5 h-5 mr-3"></i>
-                Orders
-            </a>
+                <a href="{{ route('admin.orders') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.orders*') ? 'bg-gray-800 text-white' : '' }}">
+                    <i class="fas fa-shopping-cart w-5 h-5 mr-3"></i>
+                    Orders
+                </a>
             
-            <a href="{{ route('admin.products.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.products*') ? 'bg-gray-800 text-white' : '' }}">
-                <i class="fas fa-coffee w-5 h-5 mr-3"></i>
-                Products
-            </a>
+                <a href="{{ route('admin.products.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{   request()->routeIs('admin.products*') ? 'bg-gray-800 text-white' : '' }}">
+                    <i class="fas fa-coffee w-5 h-5 mr-3"></i>
+                    Products
+                </a>
             
-            <a href="{{ route('admin.banners.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.banners*') ? 'bg-gray-800 text-white' : '' }}">
-                <i class="fas fa-images w-5 h-5 mr-3"></i>
-                Banners
-            </a>
+                <a href="{{ route('admin.banners.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.banners*') ? 'bg-gray-800 text-white' : '' }}">
+                    <i class="fas fa-images w-5 h-5 mr-3"></i>
+                    Banners
+                </a>
             
-            <a href="{{ route('admin.messages.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.messages*') ? 'bg-gray-800 text-white' : '' }}">
-                <i class="fas fa-envelope w-5 h-5 mr-3"></i>
-                Messages
-            </a>
+                <a href="{{ route('admin.messages.index') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.messages*') ? 'bg-gray-800 text-white' : '' }}">
+                    <i class="fas fa-envelope w-5 h-5 mr-3"></i>
+                    Messages
+                </a>
                 
                 <a href="{{ route('admin.settings') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg transition-colors {{ request()->routeIs('admin.settings*') ? 'bg-gray-800 text-white' : '' }}">
                     <i class="fas fa-cog w-5 h-5 mr-3"></i>
