@@ -23,8 +23,17 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        // force laravel to generate all urls as https
-        if (env('APP_ENV') !== 'local') {
+        /**
+         * force laravel to generate all urls as https
+         */
+        // if (env('APP_ENV') !== 'local') {
+        //     URL::forceScheme('https');
+        // }
+
+        /**
+         * best pracice
+         */
+        if (app()->environment('production')) {
             URL::forceScheme('https');
         }
     }
